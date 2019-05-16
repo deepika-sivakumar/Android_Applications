@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <!-- Single Cryptogram List Item -->
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/playerNameListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="First Name: John"
+        android:textColor="@color/appBgColor"
+        android:textSize="15sp" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/playerUsernameListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="Username: Player1"
+        android:textColor="@color/appBgColor"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/playerLevelListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:textColor="@color/appBgColor"
+        android:textSize="15sp"
+        android:text="Level: Hard" />
+
+    <TextView
+        android:id="@+id/playerWonListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:textColor="@color/appBgColor"
+        android:textSize="15sp"
+        android:text="Won: 10" />
+
+    <TextView
+        android:id="@+id/playerLostListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:textColor="@color/appBgColor"
+        android:textSize="15sp"
+        android:text="Lost: 3" />
+
+    <!-- TODO: List of sub items choose: Cryptoname, Status. How ? Keep extra attributes hidden, show in activity-->
+    <!-- TODO: List of sub items edit: Cryptoname -->
+
+</LinearLayout>

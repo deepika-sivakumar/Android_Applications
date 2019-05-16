@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Reusable List View -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SolveCryptogramActivity">
+
+    <TextView
+        android:id="@+id/cryptogramNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="21dp"
+        android:text="Crypto1"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/TextViewLabelIncorrectAttempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="55dp"
+        android:text="Attempts Remaining:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/attemptsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/TextViewLabelIncorrectAttempts"
+        android:inputType="number"
+        android:text="10"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/encryptedLabel"
+        android:layout_width="128dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="88dp"
+        android:text="Encrypted Phrase:" />
+
+    <TextView
+        android:id="@+id/encryptedPhraseTextView"
+        android:layout_width="223dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="88dp" />
+
+
+    <TextView
+        android:id="@+id/potentialLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="557dp"
+        android:text="Potential Solution:" />
+
+    <TextView
+        android:id="@+id/potentialSolutionTextView"
+        android:layout_width="241dp"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="319dp"
+        android:layout_marginEnd="20dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/play_cryptogram_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="418dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="185dp" />
+
+    <Button
+        android:id="@+id/solveFormButtonReset"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="594dp"
+        android:layout_marginEnd="256dp"
+        android:text="Reset" />
+
+    <Button
+        android:id="@+id/solveFormButtonViewSolution"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="594dp"
+        android:layout_marginEnd="23dp"
+        android:text="View Potential Solution" />
+
+    <Button
+        android:id="@+id/solveFormButtonSubmit"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="657dp"
+        android:layout_marginEnd="19dp"
+        android:text="Submit Answer" />
+
+
+    <!--<Button-->
+    <!--android:id="@+id/button"-->
+    <!--android:layout_width="148dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginBottom="13dp"-->
+    <!--android:text="Return To Menu" />-->
+
+</RelativeLayout>

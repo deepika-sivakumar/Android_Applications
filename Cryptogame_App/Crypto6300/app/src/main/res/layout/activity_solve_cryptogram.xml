@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Reusable List View -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SolveCryptogramActivity">
+
+    <TextView
+        android:id="@+id/cryptogramNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="19dp"
+        android:text="Crypto1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/TextViewLabelIncorrectAttempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:text="Attempts Remaining:" />
+
+    <TextView
+        android:id="@+id/attemptsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:layout_toEndOf="@+id/TextViewLabelIncorrectAttempts"
+        android:inputType="number"
+        android:text=""
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/encryptedLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="48dp"
+        android:text="Encrypted Phrase:"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/encryptedPhraseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/textview_border"
+        android:fadeScrollbars="false"
+        android:paddingLeft="6dp"
+        android:paddingTop="4dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="4dp"
+        android:scrollbars="vertical"
+        android:text=""
+        android:textColor="@color/yellow"
+        android:textSize="18sp" />
+
+    <!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal"
+        android:fadeScrollbars="false"
+        android:fillViewport="true">-->
+    <LinearLayout
+        android:id="@+id/solveLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2" />
+    <!--</ScrollView>-->
+
+    <!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scroll2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal"
+        android:fadeScrollbars="false"
+        android:fillViewport="true">-->
+    <LinearLayout
+        android:id="@+id/solveLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2" />
+    <!--</ScrollView>-->
+
+    <TextView
+        android:id="@+id/potentialLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="333dp"
+        android:text="Potential Solution:"
+        android:textAlignment="center" />
+
+    <!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:fillViewport="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">-->
+
+    <TextView
+        android:id="@+id/potentialSolutionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="354dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/textview_border"
+        android:fadeScrollbars="false"
+        android:paddingLeft="6dp"
+        android:paddingTop="4dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="4dp"
+        android:scrollbars="vertical"
+        android:text=""
+        android:textColor="@color/yellow"
+        android:textSize="18sp" />
+        <!--</LinearLayout>
+    </ScrollView>-->
+
+
+    <Button
+        android:id="@+id/solveFormButtonReset"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="284dp"
+        android:onClick="onResetAnswerButtonClick"
+
+        android:text="Reset" />
+
+    <Button
+        android:id="@+id/solveFormButtonViewSolution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="284dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="onViewSolutionButtonClick"
+        android:text="Save/View Solution" />
+
+
+    <Button
+        android:id="@+id/solveFormButtonSubmit"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="439dp"
+        android:layout_marginEnd="20dp"
+        android:enabled="false"
+        android:onClick="onSubmitAnswerButtonClick"
+        android:text="Submit Answer" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="468dp"
+        android:layout_marginEnd="17dp"
+        android:enabled="false"
+        android:onClick="onSubmitAnswerButtonClick"
+        android:text="Submit Answer" />
+
+
+</RelativeLayout>

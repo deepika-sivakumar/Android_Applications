@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CryptogramActivity">
+
+    <TextView
+        android:id="@+id/cryptogramFormTitleTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="20sp"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/cryptoFormLabelCryptoName"
+        android:layout_width="87dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="32dp"
+        android:text="Cryptogram name:"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/cryptoFormLabelSolution"
+        android:layout_width="87dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+
+
+
+  android:layout_marginTop="164dp"
+
+        android:layout_marginEnd="32dp"
+        android:text="Solution:"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/cryptoFormLabelEasy"
+        android:layout_width="87dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+
+
+        android:layout_marginTop="232dp"
+
+        android:layout_marginEnd="32dp"
+        android:text="Easy Attempts:"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/cryptoFormLabelNormal"
+        android:layout_width="87dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+
+
+        android:layout_marginTop="284dp"
+
+        android:layout_marginEnd="32dp"
+        android:text="Normal Attempts:"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/cryptoFormLabelHard"
+        android:layout_width="87dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+
+
+        android:layout_marginTop="330dp"
+
+        android:layout_marginEnd="32dp"
+        android:text="Hard Attempts:"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/cryptoFormCryptoName"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Cryptogram Name"
+        android:maxLength="30"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/cryptoFormSolution"
+        android:layout_width="wrap_content"
+
+
+        android:layout_height="102dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Solution"
+        android:inputType="textMultiLine"
+        android:textSize="14sp" />
+
+
+    <EditText
+        android:id="@+id/cryptoFormEasy"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="98dp"
+
+
+        android:layout_marginTop="231dp"
+
+        android:layout_marginEnd="15dp"
+        android:hint="No. of Attempts"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/cryptoFormNormal"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="99dp"
+
+
+        android:layout_marginTop="279dp"
+
+        android:layout_marginEnd="15dp"
+        android:hint="No. of Attempts"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/cryptoFormHard"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="98dp"
+
+
+        android:layout_marginTop="328dp"
+
+        android:layout_marginEnd="15dp"
+        android:hint="No. of Attempts"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/cryptogramFormButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="439dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="onCryptogramFormBtnClick"
+        android:text="" />
+
+    <Button
+        android:id="@+id/cryptogramFormButtonReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="381dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="onCryptogramFormResetClick"
+        android:text="Reset" />
+
+    <!--<Button-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="148dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginStart="20dp"-->
+        <!--android:layout_marginBottom="13dp"-->
+        <!--android:text="Return To Menu" />-->
+
+
+</RelativeLayout>

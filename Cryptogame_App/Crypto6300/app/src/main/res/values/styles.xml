@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Light application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Dark App theme -->
+    <style name="DarkAppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/titleBarColor</item>
+        <item name="colorPrimaryDark">@color/darkColorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="editTextStyle">@style/MyEditTextStyle</item>
+        <item name="buttonStyle">@style/MybuttonStyle</item>
+        <item name="android:listViewStyle">@style/MyListView</item>
+    </style>
+
+    <!-- Edit Text Styles -->
+    <style name="MyEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/custom_edit_text</item>
+        <item name="android:textColor">@color/editTextColor</item>
+        <item name="android:textColorHint">@color/buttonColor</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!-- Button Style -->
+    <style name="MybuttonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/custom_button</item>
+    </style>
+
+    <!-- List Style -->
+    <style name="MyListView" parent="Widget.AppCompat.ListView">
+        <item name="android:background">@color/listColor</item>
+        <item name="android:divider">@color/buttonColor</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+</resources>

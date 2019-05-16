@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <!-- Dark theme colors -->
+    <color name="darkColorPrimary">#101010</color>
+    <color name="darkColorPrimaryDark">#000000</color>
+    <!-- App Title bar color -->
+    <color name="titleBarColor">#5779DB</color>
+    <!-- App Background color -->
+    <color name="appBgColor">#455357</color>
+    <!-- Edit Text text color -->
+    <color name="editTextColor">#455357</color>
+    <!-- Button color -->
+    <color name="buttonColor">#7B8D93</color>
+    <!-- List color -->
+    <color name="listColor">#CFD8DC</color>
+    <!-- Link color -->
+    <color name="linkColor">#4F6DD9</color>
+    <!-- Encrypted color -->
+    <color name="yellow">#C8C308</color>
+    <!-- Define Common colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
