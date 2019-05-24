@@ -3,7 +3,7 @@
 ## 1. Cryptogame
   Cryptogame is android application cryptogram puzzle game that uses simple substitution cipher to encrypt the letters of a short sentence. The player has to decode the encrypted sentence and reveal the original one. 
  
-## 2. User Interface
+### User Interface
 <img src ="UI/1_Login.PNG" width="275" height="500"> <img src ="UI/2_PlayerMenu.PNG" width="275" height="500"> <img src ="UI/3_AdminMenu.PNG" width="275" height="500">
 
 - Left: Login screen for the user
